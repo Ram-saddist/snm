@@ -1,0 +1,47 @@
+.main{
+    background-image: url('https://prmceam.ac.in/wp-content/uploads/2015/03/background-learner.jpg');
+    min-height: 92vh;
+    background-size: cover;
+}
+.content{
+    border: 1px solid white;
+    width: 30%;
+    padding: 5%;
+    background-color: transparent;   
+    margin-left: 450px;
+}
+.main h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;  
+    padding-top: 3%; 
+
+}
+
+.inputbox{
+    padding: 10px;
+    border:none;
+    width: 400px;
+    border:1px solid white;
+    border-radius: 25px;
+    padding: 6px;
+    margin:20px 0px ;
+}
+
+.ptag{
+    color: white;
+    font-size: 20px;
+}
+.main button{
+    padding: 10px;
+    border: 2px solid white;
+    width: 40%;
+    border-radius: 75px;
+    background-color: white;
+    margin-left: 100px;
+    font-size: 20px;
+}
+.main button:hover{
+    background-color: transparent;
+    color: white;
+}

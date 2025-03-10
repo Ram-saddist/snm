@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #004080; /* Navy Blue Background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+  }
+  
+  .navbar a {
+    color: white; /* White Text */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #0059b3; /* Light Blue Hover Effect */
+  }
+.dashnav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: whitesmoke;
+  color: rgb(69, 30, 105);
+  font-size: 23px;
+  position: sticky;
+
+}
+.dashnav a{
+  text-decoration: none;
+}
+.dashnav select{
+  border: none;
+  font-size: 18px;
+  color: rgb(69, 30, 105);
+  background-color: whitesmoke;
+}
+

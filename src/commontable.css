@@ -1,0 +1,23 @@
+.tablesection {
+    margin: 50px auto;
+    width: 60%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .tablecontenth1 {
+    text-align: center;
+    color: #333333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+ }
+ .tablebody{
+    margin: 50px auto;
+    padding: 2px;
+ }
+ .tablebody tr,td,th{
+    padding: 10px;
+    font-size: 20px;
+ }

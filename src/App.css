@@ -1,0 +1,27 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.main-container{
+  background-image: url("https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64f5dd642638a92e7481b053_Rectangle%20(70).svg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light Blue Background */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .welcome {
+  color: #004080; /* Navy Blue Text */
+  font-size: 36px;
+  margin: 0;
+}
