@@ -10,7 +10,7 @@ export default function ViewAllFiles() {
     useEffect(() => {
         const user = localStorage.getItem('user');
         axios
-            .post("http://127.0.0.1:5000/api/viewallfiles", { user })
+            .post("https://sivaramcodegnan.pythonanywhere.com/api/viewallfiles", { user })
             .then((res) => {
                 setFiles(res.data.result);
             })
@@ -22,7 +22,7 @@ export default function ViewAllFiles() {
 
     const handleView = (id) => {
         axios
-            .post("http://127.0.0.1:5000/api/viewfile", { nid: id }, { responseType: 'blob' })
+            .post("https://sivaramcodegnan.pythonanywhere.com/api/viewfile", { nid: id }, { responseType: 'blob' })
             .then((res) => {
                 const fileUrl = URL.createObjectURL(new Blob([res.data]));
                 setFileViewUrl(fileUrl);
@@ -35,7 +35,7 @@ export default function ViewAllFiles() {
 
    const handleDownload = (id) => {
     axios
-        .post("http://127.0.0.1:5000/api/downloadfile", { nid: id }, { responseType: 'blob' })
+        .post("https://sivaramcodegnan.pythonanywhere.com/api/downloadfile", { nid: id }, { responseType: 'blob' })
         .then((res) => {
             // Create a URL for the blob object
             const url = window.URL.createObjectURL(new Blob([res.data]));
@@ -71,7 +71,7 @@ export default function ViewAllFiles() {
     const handleDelete = (id) => {
         if (window.confirm("Are you sure you want to delete this file?")) {
             axios
-                .post("http://127.0.0.1:5000/api/deletefile", { nid: id })
+                .post("https://sivaramcodegnan.pythonanywhere.com/api/deletefile", { nid: id })
                 .then((res) => {
                     alert("File deleted successfully!");
                     setFiles((prevFiles) => prevFiles.filter((file) => file.fid !== id));

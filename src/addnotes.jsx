@@ -18,7 +18,7 @@ export default function addnotes() {
     }
     function handleData(e){
         e.preventDefault()
-        axios.post("http://127.0.0.1:5000/api/addnotes",{addData,user})
+        axios.post("https://sivaramcodegnan.pythonanywhere.com/api/addnotes",{addData,user})
         .then((res)=>{
             console.log(res)
             if (res.status === 200) {

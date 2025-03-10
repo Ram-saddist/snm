@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
     console.log(formData);
     axios
-      .post("http://127.0.0.1:5000/api/login", formData)
+      .post("https://sivaramcodegnan.pythonanywhere.com/api/login", formData)
       .then((res) => {
         console.log(res);
         if (res.status === 200) {

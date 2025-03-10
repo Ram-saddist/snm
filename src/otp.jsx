@@ -12,7 +12,7 @@ export default function otp() {
     function handleOtp(e){
         e.preventDefault()
         console.log(otpr,userData)
-        axios.post("http://127.0.0.1:5000/api/otp",{otpr,userData})
+        axios.post("https://sivaramcodegnan.pythonanywhere.com/api/otp",{otpr,userData})
             .then((res)=>{
                 console.log(res)
                 if(res.status===200){

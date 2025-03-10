@@ -17,7 +17,7 @@ export default function uploadfile() {
     const formData = new FormData();
     formData.append("id", id);
     formData.append("file", file);
-    axios.post("http://127.0.0.1:5000/api/uploadfile", formData, {
+    axios.post("https://sivaramcodegnan.pythonanywhere.com/api/uploadfile", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       }

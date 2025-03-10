@@ -7,7 +7,7 @@ export default function viewallnotes() {
     const [notes,setnotes]=useState([]);
     useEffect(()=>{
         const user=localStorage.getItem('user')
-        axios.post("http://127.0.0.1:5000/api/viewallnotes",{user})
+        axios.post("https://sivaramcodegnan.pythonanywhere.com/api/viewallnotes",{user})
         .then((res)=>{
             setnotes(res.data.result);
         })
@@ -20,7 +20,7 @@ export default function viewallnotes() {
     const handleDelete = (id) => {
       if (window.confirm("Are you sure you want to delete this note?")) {
           axios
-              .post("http://127.0.0.1:5000/api/deletenote", { nid: id })
+              .post("https://sivaramcodegnan.pythonanywhere.com/api/deletenote", { nid: id })
               .then((res) => {
                   alert("Note deleted successfully!");
                   // Filter out the deleted note from the state

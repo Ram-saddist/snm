@@ -8,7 +8,7 @@ export default function viewnotes() {
     const {nid}=useParams()
     
     useEffect(()=>{
-        axios.post("http://127.0.0.1:5000/api/viewnotes",{nid})
+        axios.post("https://sivaramcodegnan.pythonanywhere.com/api/viewnotes",{nid})
         .then((res)=>{
             setnotes(res.data.notes);
         })

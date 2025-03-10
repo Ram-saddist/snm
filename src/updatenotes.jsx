@@ -15,7 +15,7 @@ export default function UpdateNotes() {
     // Fetch note data
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:5000/api/updatenotes?nid=${nid}`)
+            .get(`https://sivaramcodegnan.pythonanywhere.com/api/updatenotes?nid=${nid}`)
             .then((res) => {
                 console.log(res.data);
                 const fetchedNote = res.data.note;
@@ -44,7 +44,7 @@ export default function UpdateNotes() {
     function handleUpdate(e) {
         e.preventDefault(); // Prevent default form submission behavior
         axios
-            .post("http://127.0.0.1:5000/api/updatenotes", {
+            .post("https://sivaramcodegnan.pythonanywhere.com/api/updatenotes", {
                 nid: nid,
                 updateData: updateData
             })

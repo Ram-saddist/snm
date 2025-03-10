@@ -22,7 +22,7 @@ export default function register() {
     function register(e){
         e.preventDefault()
         console.log(formData)
-        axios.post("http://127.0.0.1:5000/api/create",{formData})
+        axios.post("https://sivaramcodegnan.pythonanywhere.com/api/create",{formData})
             .then((res)=>{
                 console.log(res)
                 if(res.status===200){
